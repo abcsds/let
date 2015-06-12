@@ -15,6 +15,8 @@
 
         <title><?php wp_title( '|', true, 'right' ) ?></title>
 		<meta name="author" content="Alberto Barradas">
+        <meta name="description" content="<?php bloginfo('description') ?>">
+        <link rel="canonical" href="<?php bloginfo('url') ?>">
 		<link rel="author" href="http://github.com/abcsds">
 		<?php wp_head() ?>
 
@@ -37,22 +39,75 @@
         <![endif]-->
     </head>
     <body <?php body_class() ?>>
-		<header id="page-header">
-			<h1 id="page-logo">
-				<?php if (!is_front_page()): ?>
-					<a href="<?php bloginfo('url') ?>" title="<?php bloginfo('name') ?> - <?php bloginfo('description') ?>">
-						<?php bloginfo('name') ?>
-					</a>
-				<?php else: ?>
-					<span>
-						<?php bloginfo('name') ?>
-					</span>
-				<?php endif; ?>
-			</h1>
-			<?php wp_nav_menu(array(
-				'theme_location' => 'main-nav',
-				'container'      => 'nav',
-				'container_id'   => 'primary-nav'
-			)) ?>
-		</header>
+
+        <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
+          <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="short-title navbar-brand page-scroll" href="#page-top">
+                <img src="/img/logos/let_2x-white.png" alt="Logo LET + ITESM" class="color" />
+                <img src="/img/logos/let_2x.png" alt="Logo LET + ITESM" class="white" />
+              </a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+              <ul class="nav navbar-nav navbar-right">
+                  <?php wp_nav_menu(array(
+      				'theme_location' => 'main-nav',
+      				'container'      => 'nav',
+      				'container_id'   => 'primary-nav'
+      			)) ?>
+                <?php wp_nav_menu(
+                array(
+                	'theme_location'  => '',
+                	'menu'            => '',
+                	'container'       => 'div',
+                	'container_class' => '',
+                	'container_id'    => '',
+                	'menu_class'      => 'menu',
+                	'menu_id'         => '',
+                	'echo'            => true,
+                	'fallback_cb'     => 'wp_page_menu',
+                	'before'          => '',
+                	'after'           => '',
+                	'link_before'     => '',
+                	'link_after'      => '',
+                	'items_wrap'      => '<ul id="%1$s" class="%2$s">%3$s</ul>',
+                	'depth'           => 0,
+                	'walker'          => ''
+                ));
+                ?>
+                {% for menu in t.menu %}
+                <li>
+                  {% if menu.content == "Español" or menu.content == "English" %}
+                  <a class="page-scroll mini" href="{{ menu.link }}">{{ menu.content }}</a>
+                    {% else %}
+                    <a class="page-scroll" href="{{ menu.link }}">{{ menu.content }}</a>
+                  {% endif %}
+                </li>
+                {% endfor %}
+              </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+          </div>
+          <!-- /.container-fluid -->
+        </nav>
+
+		<header id="bg-primary">
+            <div class="header-content">
+                <div class="header-content-inner">
+                    <img src="{{ t.home.logo }}" alt="let-logo" class="img-responsive main-logo">
+                    <hr>
+                    <p>{{ t.home.content }}</p>
+                    <a href="#objetivos" class="btn btn-primary btn-xl page-scroll">{{ t.home.button }}</a>
+                </div>
+            </div>
+
 		<div id="content-wrap">
