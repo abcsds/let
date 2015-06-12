@@ -2,3 +2,4 @@
 _site
 .sass-cache
 local-config.php
+wp-content/themes/let-theme/.yeopress
