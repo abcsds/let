@@ -9,9 +9,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <!-- TODO: Relative paths! -->
-        <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
-        <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96">
-        <link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
+        <link rel="icon" type="image/png" href="<?php bloginfo('template_directory'); ?>/favicon-32x32.png" sizes="32x32">
+        <link rel="icon" type="image/png" href="<?php bloginfo('template_directory'); ?>/favicon-96x96.png" sizes="96x96">
+        <link rel="icon" type="image/png" href="<?php bloginfo('template_directory'); ?>/favicon-16x16.png" sizes="16x16">
 
         <title><?php wp_title( '|', true, 'right' ) ?></title>
 		<meta name="author" content="Alberto Barradas">
@@ -22,13 +22,14 @@
 
         <!-- Bootstrap Core CSS -->
         <!-- TODO: Relative paths! -->
-        <link rel="stylesheet" href="/css/bootstrap.min.css" type="text/css">
+        <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/bootstrap.min.css" type="text/css">
+        <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/global.css" type="text/css">
 
         <!-- Custom Fonts -->
         <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
         <link href='http://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
         <!-- TODO: Relative paths! -->
-        <link rel="stylesheet" href="/font-awesome/css/font-awesome.min.css" type="text/css">
+        <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/font-awesome/css/font-awesome.min.css" type="text/css">
 
 
         <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -39,9 +40,18 @@
         <![endif]-->
     </head>
     <body <?php body_class() ?>>
-
+        <header class="bg-primary">
+          <div class="header-content">
+            <div class="header-content-inner">
+              <img src="<?php bloginfo('template_directory'); ?>/img/logos/let-logo-hor-white.png" alt="let-logo" class="img-responsive main-logo">
+              <hr>
+              <p>Una comunidad activa enfocada en idear, construir e implementar nuevas soluciones que transformen la vida de las personas a través de innovación social y emprendimiento público en sectores clave.</p>
+              <a href="#objetivos" class="btn btn-primary btn-xl page-scroll">Conoce más</a>
+            </div>
+          </div>
+        </header>
         <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
-          <div class="container-fluid">
+          <div class="container-fluid" id="primary-nav">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
               <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
@@ -51,63 +61,37 @@
                 <span class="icon-bar"></span>
               </button>
               <a class="short-title navbar-brand page-scroll" href="#page-top">
-                <img src="/img/logos/let_2x-white.png" alt="Logo LET + ITESM" class="color" />
-                <img src="/img/logos/let_2x.png" alt="Logo LET + ITESM" class="white" />
+                <img src="<?php bloginfo('template_directory'); ?>/img/logos/let_2x-white.png" alt="Logo LET + ITESM" class="color" />
+                <img src="<?php bloginfo('template_directory'); ?>/img/logos/let_2x.png" alt="Logo LET + ITESM" class="white" />
               </a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-              <ul class="nav navbar-nav navbar-right">
-                  <?php wp_nav_menu(array(
-      				'theme_location' => 'main-nav',
-      				'container'      => 'nav',
-      				'container_id'   => 'primary-nav'
-      			)) ?>
-                <?php wp_nav_menu(
-                array(
-                	'theme_location'  => '',
-                	'menu'            => '',
-                	'container'       => 'div',
-                	'container_class' => '',
-                	'container_id'    => '',
-                	'menu_class'      => 'menu',
-                	'menu_id'         => '',
-                	'echo'            => true,
-                	'fallback_cb'     => 'wp_page_menu',
-                	'before'          => '',
-                	'after'           => '',
-                	'link_before'     => '',
-                	'link_after'      => '',
-                	'items_wrap'      => '<ul id="%1$s" class="%2$s">%3$s</ul>',
-                	'depth'           => 0,
-                	'walker'          => ''
-                ));
-                ?>
-                {% for menu in t.menu %}
-                <li>
-                  {% if menu.content == "Español" or menu.content == "English" %}
-                  <a class="page-scroll mini" href="{{ menu.link }}">{{ menu.content }}</a>
-                    {% else %}
-                    <a class="page-scroll" href="{{ menu.link }}">{{ menu.content }}</a>
-                  {% endif %}
-                </li>
-                {% endfor %}
-              </ul>
-            </div>
+            <?php wp_nav_menu(
+            array(
+                'theme_location'  => '',
+                'menu'            => '',
+                'container'       => 'div',
+                'container_class' => 'container-fluid',
+                'container_id'    => 'primary-nav',
+                'menu_class'      => 'menu',
+                'menu_id'         => '',
+                'echo'            => true,
+                'fallback_cb'     => 'wp_page_menu',
+                'before'          => '',
+                'after'           => '',
+                'link_before'     => '',
+                'link_after'      => '',
+                'items_wrap'      => '<ul id="%1$s" class="%2$s nav navbar-nav navbar-right">%3$s</ul>',
+                'depth'           => 0,
+                'walker'          => ''
+            ));
+            ?>
             <!-- /.navbar-collapse -->
           </div>
           <!-- /.container-fluid -->
         </nav>
 
-		<header id="bg-primary">
-            <div class="header-content">
-                <div class="header-content-inner">
-                    <img src="{{ t.home.logo }}" alt="let-logo" class="img-responsive main-logo">
-                    <hr>
-                    <p>{{ t.home.content }}</p>
-                    <a href="#objetivos" class="btn btn-primary btn-xl page-scroll">{{ t.home.button }}</a>
-                </div>
-            </div>
 
-		<div id="content-wrap">
+
+        <div id="content-wrap">
