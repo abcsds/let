@@ -40,16 +40,6 @@
         <![endif]-->
     </head>
     <body <?php body_class() ?>>
-        <header class="bg-primary">
-          <div class="header-content">
-            <div class="header-content-inner">
-              <img src="<?php bloginfo('template_directory'); ?>/img/logos/let-logo-hor-white.png" alt="let-logo" class="img-responsive main-logo">
-              <hr>
-              <p>Una comunidad activa enfocada en idear, construir e implementar nuevas soluciones que transformen la vida de las personas a través de innovación social y emprendimiento público en sectores clave.</p>
-              <a href="#objetivos" class="btn btn-primary btn-xl page-scroll">Conoce más</a>
-            </div>
-          </div>
-        </header>
         <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
           <div class="container-fluid" id="primary-nav">
             <!-- Brand and toggle get grouped for better mobile display -->
@@ -61,8 +51,8 @@
                 <span class="icon-bar"></span>
               </button>
               <a class="short-title navbar-brand page-scroll" href="#page-top">
-                <img src="<?php bloginfo('template_directory'); ?>/img/logos/let_2x-white.png" alt="Logo LET + ITESM" class="color" />
-                <img src="<?php bloginfo('template_directory'); ?>/img/logos/let_2x.png" alt="Logo LET + ITESM" class="white" />
+                <img src="<?php bloginfo('template_directory'); ?>/img/logos/let_2x-white.png" alt="Logo LET + ITESM" class="white" />
+                <img src="<?php bloginfo('template_directory'); ?>/img/logos/let_2x.png" alt="Logo LET + ITESM" class="color" />
               </a>
             </div>
 
@@ -74,16 +64,16 @@
                 'container'       => 'div',
                 'container_class' => 'container-fluid',
                 'container_id'    => 'primary-nav',
-                'menu_class'      => 'menu',
-                'menu_id'         => '',
+                'menu_class'      => 'collapse navbar-collapse',
+                'menu_id'         => 'bs-example-navbar-collapse-1',
                 'echo'            => true,
                 'fallback_cb'     => 'wp_page_menu',
                 'before'          => '',
                 'after'           => '',
                 'link_before'     => '',
                 'link_after'      => '',
-                'items_wrap'      => '<ul id="%1$s" class="%2$s nav navbar-nav navbar-right">%3$s</ul>',
-                'depth'           => 0,
+                'items_wrap'      => '<ul class="nav navbar-nav navbar-right "><a class="page-scroll">%3$s</a></ul>',
+                'depth'           => 1,
                 'walker'          => ''
             ));
             ?>
@@ -91,6 +81,17 @@
           </div>
           <!-- /.container-fluid -->
         </nav>
+
+        <header class="bg-primary">
+          <div class="header-content">
+            <div class="header-content-inner">
+              <img src="<?php bloginfo('template_directory'); ?>/img/logos/let-logo-hor-white.png" alt="let-logo" class="img-responsive main-logo">
+              <hr>
+              <p>Una comunidad activa enfocada en idear, construir e implementar nuevas soluciones que transformen la vida de las personas a través de innovación social y emprendimiento público en sectores clave.</p>
+              <a href="#objetivos" class="btn btn-primary btn-xl page-scroll">Conoce más</a>
+            </div>
+          </div>
+        </header>
 
 
 
