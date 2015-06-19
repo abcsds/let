@@ -57,26 +57,22 @@
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
-            <?php wp_nav_menu(
-            array(
-                'theme_location'  => '',
-                'menu'            => '',
-                'container'       => 'div',
-                'container_class' => 'container-fluid',
-                'container_id'    => 'primary-nav',
-                'menu_class'      => 'collapse navbar-collapse',
-                'menu_id'         => 'bs-example-navbar-collapse-1',
-                'echo'            => true,
-                'fallback_cb'     => 'wp_page_menu',
-                'before'          => '',
-                'after'           => '',
-                'link_before'     => '',
-                'link_after'      => '',
-                'items_wrap'      => '<ul class="nav navbar-nav navbar-right "><a class="page-scroll">%3$s</a></ul>',
-                'depth'           => 1,
-                'walker'          => ''
-            ));
-            ?>
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+              <ul class="nav navbar-nav navbar-right">
+                <li>
+                  <a class="page-scroll" href="#objetivos">¿Quiénes somos?</a>
+                </li>
+                <li>
+                  <a class="page-scroll" href="#metodologia">¿Cómo trabajamos?</a>
+                </li>
+                <li>
+                  <a class="page-scroll" href="#programas">Programas</a>
+                </li>
+                <li>
+                  <a class="page-scroll" href="#contacto">Contacto</a>
+                </li>
+              </ul>
+            <div>
             <!-- /.navbar-collapse -->
           </div>
           <!-- /.container-fluid -->
