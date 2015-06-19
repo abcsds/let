@@ -50,7 +50,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
               </button>
-              <a class="short-title navbar-brand page-scroll" href="#page-top">
+              <a class="short-title navbar-brand page-scroll" href="<?php get_home_url(); ?>#page-top">
                 <img src="<?php bloginfo('template_directory'); ?>/img/logos/let_2x-white.png" alt="Logo LET + ITESM" class="white" />
                 <img src="<?php bloginfo('template_directory'); ?>/img/logos/let_2x.png" alt="Logo LET + ITESM" class="color" />
               </a>
@@ -60,16 +60,16 @@
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
               <ul class="nav navbar-nav navbar-right">
                 <li>
-                  <a class="page-scroll" href="#objetivos">¿Quiénes somos?</a>
+                  <a class="page-scroll" href="<?php get_home_url(); ?>#objetivos">¿Quiénes somos?</a>
                 </li>
                 <li>
-                  <a class="page-scroll" href="#metodologia">¿Cómo trabajamos?</a>
+                  <a class="page-scroll" href="<?php get_home_url(); ?>#metodologia">¿Cómo trabajamos?</a>
                 </li>
                 <li>
-                  <a class="page-scroll" href="#programas">Programas</a>
+                  <a class="page-scroll" href="<?php get_home_url(); ?>#programas">Programas</a>
                 </li>
                 <li>
-                  <a class="page-scroll" href="#contacto">Contacto</a>
+                  <a class="page-scroll" href="<?php get_home_url(); ?>#contacto">Contacto</a>
                 </li>
               </ul>
             <div>
