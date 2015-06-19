@@ -6,7 +6,7 @@
 	query_posts( array(
 		'category_name' => 'landing',
 		'posts_per_page' => -1,
-		'order' => 'DESC'
+		'order' => 'ASC'
 	) );
 
 	while (have_posts()) : the_post();
