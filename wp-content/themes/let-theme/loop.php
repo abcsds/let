@@ -1,4 +1,3 @@
-
 <?php if (is_page()): the_post() ?>
 	<section id="page-<?php the_ID() ?>">
 		<?php the_content(); ?>
