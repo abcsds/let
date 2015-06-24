@@ -1012,7 +1012,7 @@ input.button {
 
 /* Content */
 #content-wrap {
-  padding: 1em;
+  padding: 0;
   background: #fff;
 }
 
