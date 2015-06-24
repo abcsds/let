@@ -59,20 +59,33 @@
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
               <ul class="nav navbar-nav navbar-right">
+            <?php
+            $args = array(
+            	'sort_order' => 'ASC',
+            	'hierarchical' => 1,
+            	'exclude' => '',
+            	'child_of' => 0,
+            	'parent' => -1,
+            	'exclude_tree' => '',
+            	'number' => '',
+            	'offset' => 0,
+            	'post_type' => 'page',
+            	'post_status' => 'publish'
+            );
+            $pages = get_pages($args);
+            foreach ($pages as $page_data) {
+                $title = $page_data->post_title;
+                $slug = $page_data->post_name;
+            ?>
+
                 <li>
-                  <a class="page-scroll" href="<?php get_home_url(); ?>#objetivos">¿Quiénes somos?</a>
-                </li>
-                <li>
-                  <a class="page-scroll" href="<?php get_home_url(); ?>#metodologia">¿Cómo trabajamos?</a>
-                </li>
-                <li>
-                  <a class="page-scroll" href="<?php get_home_url(); ?>#programas">Programas</a>
-                </li>
-                <li>
-                  <a class="page-scroll" href="<?php get_home_url(); ?>#contacto">Contacto</a>
-                </li>
-              </ul>
-            <div>
+                        <a class="page-scroll" href="<?php get_home_url(); ?>#<?php echo "$slug" ?>"><?php echo "$title" ?></h2>
+                </div>
+
+            <?php
+            }?>
+            </ul>
+          <div>
             <!-- /.navbar-collapse -->
           </div>
           <!-- /.container-fluid -->

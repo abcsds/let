@@ -21,13 +21,13 @@ if (file_exists(dirname(__FILE__) . '/local-config.php')) {
 
 // Global DB config
 if (!defined('DB_NAME')) {
-	define('DB_NAME', 'let');
+	define('DB_NAME', 'letemsgn_wp');
 }
 if (!defined('DB_USER')) {
-	define('DB_USER', 'root');
+	define('DB_USER', 'letemsgn_wp');
 }
 if (!defined('DB_PASSWORD')) {
-	define('DB_PASSWORD', '');
+	define('DB_PASSWORD', 'X8!9BP9GS]');
 }
 if (!defined('DB_HOST')) {
 	define('DB_HOST', 'localhost');
