@@ -13,7 +13,7 @@
         <link rel="icon" type="image/png" href="<?php bloginfo('template_directory'); ?>/favicon-96x96.png" sizes="96x96">
         <link rel="icon" type="image/png" href="<?php bloginfo('template_directory'); ?>/favicon-16x16.png" sizes="16x16">
 
-        <title><?php wp_title( '|', true, 'right' ) ?></title>
+        <title><?php bloginfo('name') ?></title>
 		<meta name="author" content="Alberto Barradas">
         <meta name="description" content="<?php bloginfo('description') ?>">
         <link rel="canonical" href="<?php bloginfo('url') ?>">
