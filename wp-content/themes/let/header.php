@@ -79,7 +79,7 @@
             ?>
 
                 <li>
-                        <a class="page-scroll" href="<?php get_home_url(); ?>#<?php echo "$slug" ?>"><?php echo "$title" ?></h2>
+                        <a class="page-scroll" href="<?php get_home_url(); ?>#<?php echo "$slug" ?>"><?php echo "$title" ?></a>
                 </li>
 
             <?php

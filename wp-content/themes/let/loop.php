@@ -4,7 +4,7 @@
 	</section>
 <?php else:
 	$args = array(
-		'sort_order' => 'ASC',
+		'sort_order' => 'DESC',
 		'hierarchical' => 1,
 		'exclude' => '',
 		'child_of' => 0,
