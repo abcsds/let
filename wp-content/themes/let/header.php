@@ -61,7 +61,7 @@
               <ul class="nav navbar-nav navbar-right">
             <?php
             $args = array(
-            	'sort_order' => 'ASC',
+            	'sort_order' => 'DESC',
             	'hierarchical' => 1,
             	'exclude' => '',
             	'child_of' => 0,
@@ -80,10 +80,13 @@
 
                 <li>
                         <a class="page-scroll" href="<?php get_home_url(); ?>#<?php echo "$slug" ?>"><?php echo "$title" ?></h2>
-                </div>
+                </li>
 
             <?php
             }?>
+                <li>
+                    <a class="page-scroll mini" href="/en">English</a>
+                </li>
             </ul>
           <div>
             <!-- /.navbar-collapse -->
