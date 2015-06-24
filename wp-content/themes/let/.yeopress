@@ -13,7 +13,7 @@
 	"blockExternalRequests": false,
 	"vagrant": false,
 	"installTheme": true,
-	"themeDir": "let-theme",
+	"themeDir": "let",
 	"themeType": "git",
 	"themeTaskRunner": "grunt",
 	"themeUser": "wesleytodd",

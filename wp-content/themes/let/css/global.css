@@ -1077,7 +1077,7 @@ input.button {
 
 /* Footer */
 #page-footer {
-  width: 90%;
+  width: 100%;
   margin: 0 auto;
   padding: 1em 0;
 }
@@ -1136,7 +1136,7 @@ input.button {
   }
 
   #page-footer {
-    width: 80%;
+    width: 100%;
   }
 }
 /* More than 1534px */
