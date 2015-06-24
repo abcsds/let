@@ -231,8 +231,11 @@ input.button:active {
 
 /* Content */
 #content-wrap {
-	padding: $size_base;
+	padding: 0;
 	background: #fff;
+}
+#page-footer{
+	margin:0;
 }
 .article {
 	margin-bottom: $size_base;
@@ -298,7 +301,7 @@ input.button:active {
 
 /* Footer */
 #page-footer {
-	width: 90%;
+	width: 100%;
 	margin: 0 auto;
 	padding: $size_base 0;
 }
