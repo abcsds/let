@@ -66,7 +66,7 @@
                   </li>
             <?php
             $args = array(
-            	'sort_order' => 'DESC',
+            	'sort_order' => 'ASC',
             	'hierarchical' => 1,
             	'exclude' => '',
             	'child_of' => 0,
