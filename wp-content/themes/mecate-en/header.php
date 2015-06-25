@@ -66,16 +66,16 @@
                   </li>
             <?php
             $args = array(
-            	'sort_order' => 'DESC',
-            	'hierarchical' => 1,
-            	'exclude' => '',
-            	'child_of' => 0,
-            	'parent' => -1,
-            	'exclude_tree' => '',
-            	'number' => '',
-            	'offset' => 0,
-            	'post_type' => 'page',
-            	'post_status' => 'publish'
+            'sort_order' => 'DESC',
+            'hierarchical' => 1,
+            'exclude' => '',
+            'child_of' => 0,
+            'parent' => -1,
+            'exclude_tree' => '',
+            'number' => '',
+            'offset' => 0,
+            'post_type' => 'page',
+            'post_status' => 'publish'
             );
             $pages = get_pages($args);
             foreach ($pages as $page_data) {
