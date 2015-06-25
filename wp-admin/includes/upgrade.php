@@ -1488,7 +1488,7 @@ function upgrade_422() {
 			"SELECT `comment_ID` FROM `{$wpdb->comments}`
 				WHERE `comment_date_gmt` > '2015-04-26'
 				AND LENGTH( `comment_content` ) >= {$allowed_length}
-				AND ( `comment_content` LIKE '%%' )"
+				AND ( `comment_content` LIKE '%<%' OR `comment_content` LIKE '%>%' )"
 		);
 
 		foreach ( $comments as $comment ) {
