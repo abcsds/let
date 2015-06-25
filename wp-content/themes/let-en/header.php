@@ -85,7 +85,7 @@
             <?php
             }?>
                 <li>
-                    <a class="page-scroll mini" href="/en">Espa&ntilde;ol</a>
+                    <a class="page-scroll mini" href="http://let-emprendimientopublico.mx/">Espa&ntilde;ol</a>
                 </li>
             </ul>
           <div>
