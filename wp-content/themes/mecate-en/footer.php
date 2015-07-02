@@ -6,6 +6,11 @@
 				<img src="<?php bloginfo('template_directory'); ?>/img/logos/EGob-hor.png">
 				<img src="<?php bloginfo('template_directory'); ?>/img/logos/let.png">
 			</div>
+			<div class="container text-center">
+				<p class="name-address">Sponsor:</p>
+				<br>
+				<img src="<?php bloginfo('template_directory'); ?>/img/logos/santander.jpg">
+			</div>
 			<!-- <p class="footer-copyright">Copyright &copy; <?= date('Y') ?> <?php bloginfo('name') ?></p> -->
 
 		  	<p class="name-address">Escuela de Gobierno y Transformación Pública, Tecnológico de Monterrey. Campus Santa Fe - Carlos Lazo 100, Col. Santa Fe, C.P. 01389, México D. F., México.</p>
