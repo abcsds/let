@@ -5,10 +5,7 @@
 			<div class="container text-center">
 				<img src="<?php bloginfo('template_directory'); ?>/img/logos/EGob-hor.png">
 				<img src="<?php bloginfo('template_directory'); ?>/img/logos/let.png">
-			</div>
-			<div class="container text-center">
-				<p class="name-address">Sponsor:</p>
-				<br>
+				<p class="text-muted">Sponsor:</p>
 				<img src="<?php bloginfo('template_directory'); ?>/img/logos/santander.jpg">
 			</div>
 			<!-- <p class="footer-copyright">Copyright &copy; <?= date('Y') ?> <?php bloginfo('name') ?></p> -->
