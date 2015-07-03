@@ -193,7 +193,8 @@
 }
 
 .card.hovercard .cardheader {
-    background: url("http://lorempixel.com/850/280/nature/4/");
+    /*background: url("http://let-emprendimientopublico.mx/wp-content/img/mecateros/bg.png");*/
+    background: url("bg.png");
     background-size: cover;
     height: 135px;
 }
