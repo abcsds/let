@@ -20,20 +20,6 @@
 		<link rel="author" href="http://github.com/abcsds">
 		<?php wp_head() ?>
 
-        <meta property="og:title" content="MECATE International Public Entrepreneurship Program">
-        <meta property="og:site_name" content="Laboratorio de Emprendimiento y Transformación.">
-        <meta property="og:url" content="http://let-emprendimientopublico.mx/mecate">
-        <meta property="og:description" content="Diseñado por el Laboratorio de Emprendimiento y Transformación (LET) de la Escuela de Gobierno y Transformación Pública, Mecate es un programa internacional de emprendimiento público que convoca a estudiantes de posgrados de distintas universidades de México y del mundo, así como a ciudadanos y emprendedores excepcionales, para realizar propuestas con impacto social en México.">
-        <meta property="og:type" content="website">
-        <meta property="og:image" content="http://let-emprendimientopublico.mx/wp-content/img/meta.jpg">
-
-        <meta name="twitter:card" content="player">
-        <meta name="twitter:site" content="@LETEmprende">
-        <meta name="twitter:title" content="MECATE International Public Entrepreneurship Program">
-        <meta name="twitter:description" content="Diseñado por el Laboratorio de Emprendimiento y Transformación (LET) de la Escuela de Gobierno y Transformación Pública, Mecate es un programa internacional de emprendimiento público que convoca a estudiantes de posgrados de distintas universidades de México y del mundo, así como a ciudadanos y emprendedores excepcionales, para realizar propuestas con impacto social en México.">
-        <meta name="twitter:image:src" content="http://let-emprendimientopublico.mx/wp-content/img/logos/mecate-prog.png">
-        <meta name="twitter:player" content="">
-
         <!-- Bootstrap Core CSS -->
         <!-- TODO: Relative paths! -->
         <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/bootstrap.min.css" type="text/css">
