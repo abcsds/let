@@ -8,7 +8,6 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <!-- TODO: Relative paths! -->
         <link rel="icon" type="image/png" href="<?php bloginfo('template_directory'); ?>/favicon-32x32.png" sizes="32x32">
         <link rel="icon" type="image/png" href="<?php bloginfo('template_directory'); ?>/favicon-96x96.png" sizes="96x96">
         <link rel="icon" type="image/png" href="<?php bloginfo('template_directory'); ?>/favicon-16x16.png" sizes="16x16">
@@ -35,15 +34,15 @@
         <meta name="twitter:player" content="">
 
         <!-- Bootstrap Core CSS -->
-        <!-- TODO: Relative paths! -->
         <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/bootstrap.min.css" type="text/css">
         <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/global.css" type="text/css">
 
         <!-- Custom Fonts -->
         <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
         <link href='http://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
-        <!-- TODO: Relative paths! -->
+        <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/font-awesome/css/font-awesome.min.css" type="text/css">
+        <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/creative.css" type="text/css">
 
 
         <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -98,27 +97,21 @@
 
             <?php
             }?>
-                <li>
+                <!-- <li>
                     <a class="page-scroll mini" href="/en">English</a>
-                </li>
+                </li> -->
             </ul>
           <div>
             <!-- /.navbar-collapse -->
           </div>
           <!-- /.container-fluid -->
         </nav>
-
         <header class="bg-primary">
           <div class="header-content">
             <div class="header-content-inner">
               <img src="<?php bloginfo('template_directory'); ?>/img/logos/let-logo-hor-white.png" alt="let-logo" class="img-responsive main-logo">
-              <hr>
-              <p>Una comunidad activa enfocada en idear, construir e implementar nuevas soluciones que transformen la vida de las personas a través de innovación social y emprendimiento público en sectores clave.</p>
-              <a href="#objetivos" class="btn btn-primary btn-xl page-scroll">Conoce más</a>
             </div>
           </div>
         </header>
-
-
 
         <div id="content-wrap">
